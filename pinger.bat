@@ -1,4 +1,4 @@
-::@ECHO OFF
+@ECHO OFF
 
 IF NOT EXIST ipaddresslist.txt GOTO missinglist
 IF EXIST pingtemp.txt DEL pingtemp.txt
