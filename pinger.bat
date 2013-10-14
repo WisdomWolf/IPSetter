@@ -1,4 +1,4 @@
-@ECHO OFF
+::@ECHO OFF
 
 IF NOT EXIST ipaddresslist.txt GOTO missinglist
 IF EXIST pingtemp.txt DEL pingtemp.txt
@@ -21,8 +21,8 @@ SET ip=%1
 SET status=%2
 IF %status%==unreachable. (
 	ECHO %ip% is available.
-	CHOICE /C:YN /t 10 /d Y /M "Would you like to use %ip%? "
-	IF ERRORLEVEL 2 GOTO pingloop
+	CHOICE /C:YN /M "Would you like to use %ip%? "
+	IF ERRORLEVEL 2 GOTO :eof
 	IF ERRORLEVEL 1 CALL ipsetter.bat %ip%
 	REM CALL ipsetter.bat %ip%
 	GOTO endX
@@ -31,13 +31,12 @@ IF %status%==unreachable. (
 :missinglist
 ECHO ipaddresslist.txt couldn't be found. Will exit after next keypress.
 PAUSE
-GOTO end
+GOTO endX
 
 
 :end
 ECHO No available IP found.
 PAUSE
-EXIT
 
 :endX
 EXIT
