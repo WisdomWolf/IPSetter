@@ -1,0 +1,64 @@
+Mon 10/14/2013 
+
+Reply from 128.3.10.130: Destination host unreachable.
+Reply from 128.3.10.133: bytes=32 time=85ms TTL=128
+Reply from 128.3.10.134: bytes=32 time=1ms TTL=128
+Reply from 128.3.10.135: bytes=32 time=479ms TTL=128
+Reply from 128.3.10.136: bytes=32 time=203ms TTL=128
+Reply from 128.3.10.137: bytes=32 time=262ms TTL=128
+Reply from 128.3.10.138: bytes=32 time<1ms TTL=128
+Mon 10/14/2013 
+
+Reply from 128.3.10.130: Destination host unreachable.
+(128.3.10.132
+Reply from 128.3.10.133: bytes=32 time=65ms TTL=128
+(128.3.10.133
+Reply from 128.3.10.134: bytes=32 time=2ms TTL=128
+(128.3.10.134
+Reply from 128.3.10.135: bytes=32 time=579ms TTL=128
+(128.3.10.135
+Reply from 128.3.10.136: bytes=32 time=617ms TTL=128
+(128.3.10.136
+Reply from 128.3.10.137: bytes=32 time=188ms TTL=128
+(128.3.10.137
+Reply from 128.3.10.138: bytes=32 time<1ms TTL=128
+(128.3.10.138
+Mon 10/14/2013 
+
+128.3.10.132 
+Reply from 128.3.10.130: Destination host unreachable.
+User chose not to use 128.3.10.132. 
+128.3.10.133 
+Reply from 128.3.10.133: bytes=32 time=117ms TTL=128
+128.3.10.134 
+Reply from 128.3.10.134: bytes=32 time<1ms TTL=128
+128.3.10.135 
+Reply from 128.3.10.135: bytes=32 time=675ms TTL=128
+128.3.10.136 
+Reply from 128.3.10.136: bytes=32 time=80ms TTL=128
+128.3.10.137 
+Reply from 128.3.10.137: bytes=32 time=30ms TTL=128
+128.3.10.138 
+Reply from 128.3.10.138: bytes=32 time<1ms TTL=128
+Mon 10/14/2013 
+
+128.3.10.132 
+Reply from 128.3.10.130: Destination host unreachable.
+User chose not to use 128.3.10.132. 
+------------
+128.3.10.133 
+Reply from 128.3.10.133: bytes=32 time=64ms TTL=128
+------------
+128.3.10.134 
+Reply from 128.3.10.134: bytes=32 time=1ms TTL=128
+------------
+128.3.10.135 
+Reply from 128.3.10.135: bytes=32 time=1085ms TTL=128
+128.3.10.136 
+Reply from 128.3.10.136: bytes=32 time=585ms TTL=128
+128.3.10.137 
+Reply from 128.3.10.137: bytes=32 time=504ms TTL=128
+128.3.10.138 
+Reply from 128.3.10.138: bytes=32 time<1ms TTL=128
+------------------------------------------------------
+
