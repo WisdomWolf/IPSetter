@@ -32,8 +32,7 @@ IF %status%==unreachable. (
 	)
 	IF ERRORLEVEL 1 (
 		ECHO Calling ipsetter using %ip%. >> pinger_log.txt
-		REM IF ERRORLEVEL 1 CALL ipsetter.bat %ip%
-		ECHO "ipsetter template".
+		CALL :SetIP %ip%
 	)
 	GOTO endX
 ) ELSE (GOTO :eof)
