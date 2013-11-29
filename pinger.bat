@@ -1,4 +1,6 @@
 @ECHO OFF
+REM Changing directory back to bat file directory since running as admin defaults to system32
+CD /d %~dp0
 
 IF NOT EXIST ipaddresslist.txt GOTO missinglist
 IF EXIST pingtemp.txt DEL pingtemp.txt
@@ -56,6 +58,8 @@ ECHO "Setting DNS"
 netsh interface ip set dns %Net_Adapt% static %DNS_1% disabled
 netsh interface ip add dns %Net_Adapt% %DNS_2%
 ECHO "Configuration complete."
+REM using ping to delay execution by 1s, hopefully absolves netsh show issue.
+ping -n 1 127.0.0.1>nul
 ECHO.
 netsh int ip show config 
 PAUSE
